@@ -1,0 +1,77 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+
+		
+
+
+	<definition name="baseLayout" template="/WEB-INF/pages/master_page.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="meta" value="" />
+		<put-attribute name="header" value="/WEB-INF/pages/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="Navigation_bar" value="/WEB-INF/pages/Navigation_bar.jsp" />
+		<put-attribute name="bloge_entries_column" value="" />
+		<put-attribute name="page_counter" value="/WEB-INF/pages/page_counter.jsp" />
+		<put-attribute name="blog_search" value="/WEB-INF/pages/blog_search.jsp" />
+		<put-attribute name="blog_categories_well" value="/WEB-INF/pages/blog_categories_well.jsp" />
+		<put-attribute name="side_widget_well" value="/WEB-INF/pages/side_widget_well.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/footer.jsp" />
+		
+		
+		
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+
+
+	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="meta" value="/WEB-INF/pages/meta_index.jsp" />
+		<put-attribute name="bloge_entries_column" value="/WEB-INF/pages/welcome.jsp" />
+		
+	</definition>
+
+	
+	<definition name="jshell_intro" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="meta" value="/WEB-INF/pages/meta_jshell_intro.jsp" />
+		<put-attribute name="bloge_entries_column" value="/WEB-INF/pages/jshell_intro.jsp" />
+		
+	</definition>
+	
+	
+	<definition name="simple_calculator" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="meta" value="/WEB-INF/pages/meta_simple_calculator.jsp" />
+		<put-attribute name="bloge_entries_column" value="/WEB-INF/pages/simple_calculator.jsp" />
+		
+	</definition>
+	
+	<definition name="arraylist_find" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="meta" value="/WEB-INF/pages/meta_arraylist.jsp" />
+		<put-attribute name="bloge_entries_column" value="/WEB-INF/pages/arraylist_find.jsp" />
+		
+	</definition>
+	
+	
+	<definition name="wave_pattern" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="meta" value="/WEB-INF/pages/meta_wave_pattern.jsp" />
+		<put-attribute name="bloge_entries_column" value="/WEB-INF/pages/wave_pattern.jsp" />
+		
+	</definition>
+		
+		
+	
+	
+
+	
+	
+</tiles-definitions>  
